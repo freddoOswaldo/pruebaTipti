@@ -1,25 +1,15 @@
 <div class="display">
-  <div *ngFor = "let i of info" class="card">
+  <div *ngFor="let i of info" class="card">
     <section>
       <img class="img" [src]="i.image" alt="image">
     </section>
-     <section class="right">
-      <div>
-        <h1>{{i.name}}</h1>
-      </div>    
-      <div>
-        <h4>Estado: {{i.status}}</h4>
-      </div>
-      <div>
-        <h4>Genero: {{i.gender}}</h4>
-      </div>
-      <div>
-        <h4>Especie: {{i.species}}</h4>
-      </div>
-      <div>
-        <h4>Origen: {{i.origin.name}}</h4>
-      </div>
+    <section class="right">
+      <h1>{{i.name}}</h1>
+      <h4>Estado: {{i.status}}</h4>
+      <h4>Genero: {{i.gender}}</h4>
+      <h4>Especie: {{i.species}}</h4>
+      <h4 *ngIf="i.type!=null  && i.type!=''">Tipo: {{i.type}}</h4>
     </section>
-    </div>
-  
+  </div>
+
 </div>
