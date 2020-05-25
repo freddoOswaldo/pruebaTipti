@@ -8,11 +8,15 @@ import { InfoService } from './service/info.service';
 })
 export class AppComponent {
   title = 'prueba';
-
+  info:any;
   constructor(private service:InfoService){
+    this.getInfo();
   }
 
   getInfo(){
-    this.service.getInfo();
+    this.service.getInfo().subscribe((value:any)=>{
+      console.log(value.results)
+      this.info=value.results
+        });
   }
 }

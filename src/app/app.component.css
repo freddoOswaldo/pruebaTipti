@@ -1,0 +1,27 @@
+.card{
+    display: inline-flex ;
+    width: 500px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.display{
+    display: inline-block;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+.img{
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+}
+
+.right{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    align-self: center;
+}

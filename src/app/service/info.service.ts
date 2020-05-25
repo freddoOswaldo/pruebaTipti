@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class InfoService {
 
   constructor(private http:HttpClient) {
-
+    
    }
 
        
