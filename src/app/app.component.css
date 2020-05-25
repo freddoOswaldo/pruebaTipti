@@ -3,7 +3,8 @@
     width: 500px;
     margin: 20px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 0 1px 6px 0 rgba(90, 96, 113, 0.78);
 }
 
 .display{

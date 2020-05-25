@@ -1,16 +1,22 @@
 <div class="display">
   <div *ngFor = "let i of info" class="card">
-    <section>
+    <aside>
       <img class="img" [src]="i.image" alt="image">
-    </section>
-     <aside class="right">
+    </aside>
+     <section class="right">
       <div>
         <h1>{{i.name}}</h1>
       </div>    
       <div>
-        <h2>{{i.status}}</h2>
+        <h4>Estado: {{i.status}}</h4>
       </div>
-    </aside>
+      <div>
+        <h4>Genero: {{i.gender}}</h4>
+      </div>
+      <div>
+        <h4>Especie: {{i.species}}</h4>
+      </div>
+    </section>
     </div>
   
 </div>
