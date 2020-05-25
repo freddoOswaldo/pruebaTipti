@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { InfoService } from './service/info.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'prueba';
+
+  constructor(private service:InfoService){
+  }
+
+  getInfo(){
+    this.service.getInfo();
+  }
 }
